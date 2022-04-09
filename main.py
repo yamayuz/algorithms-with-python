@@ -1,11 +1,18 @@
+from algorithms.dot_product import dot_product_imp
 from algorithms.maximum_profit import *
+from algorithms.dot_product import *
 
 
 if __name__ == "__main__":
-    input = [6, 5, 3, 1, 3, 4, 3]
-    # input = [3, 4, 3, 2]
+    x = [[1, 5, 3],
+         [8, 5, 6]]
+
+    y = [[1, 2],
+         [9, 4],
+         [5, 1]]
     
-    print(f'O(n**2): {maximum_profit_n2(input)}')
-    print(f'O(n)   : {maximum_profit_n(input)}')
-    
+    print(dot_product(x, y))
+    print('-' * 10)
+    print(dot_product_imp(x, y))
+            
 
