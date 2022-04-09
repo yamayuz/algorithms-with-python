@@ -12,12 +12,11 @@ def maximum_profit_n2(input):
 
 # O(n)のオーダーで計算
 def maximum_profit_n(input):
-    output = input[1] - input[0]
+    maxv = input[1] - input[0]
     minv = input[0]
 
-    for j in range(1, len(input)):
-        diff = input[j] - minv
-        if output < diff: output = diff
-        if input[j] < minv: minv = input[j]
+    for i in range(1, len(input)):
+        maxv = max(maxv, input[i] - minv)
+        minv = min(minv, input[i])
 
-    return output
+    return maxv

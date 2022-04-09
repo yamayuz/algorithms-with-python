@@ -15,11 +15,15 @@ if __name__ == "__main__":
 #     print('-' * 10)
 #     print(dot_product_imp(x, y))
             
-     sales = [10, 15, 20, 37, 10]
-     milestones = [30, 70, 90]
+     # sales = [10, 15, 20, 37, 10]
+     # milestones = [30, 70, 90]
 
-     for idx_sal, elm_sal in enumerate(sales):
-          print(idx_sal, elm_sal)
+     # for idx_sal, elm_sal in enumerate(sales):
+     #      print(idx_sal, elm_sal)
 
-     print(calc_achieve(sales, milestones))
-     print(calc_achieve_imp(sales, milestones))
+     # print(calc_achieve(sales, milestones))
+     # print(calc_achieve_imp(sales, milestones))
+
+     input = [6, 5, 3, 1, 3, 4, 3]
+     output = maximum_profit_n(input)
+     print(output)
