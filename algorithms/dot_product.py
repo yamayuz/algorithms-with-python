@@ -1,5 +1,6 @@
+
 # 改善前
-def dot_product(x, y):
+def dot_product(x:list , y: list) -> list:
     matrix_out = []
 
     for i in range(len(x)):
@@ -15,7 +16,7 @@ def dot_product(x, y):
 
 
 # 改善後
-def dot_product_imp(x, y):
+def dot_product_imp(x: list, y: list) -> list:
     matrix_out = [[0 for j in range(len(x))] for i in range(len(y[0]))]
 
     for i in range(len(x)):

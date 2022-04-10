@@ -1,5 +1,5 @@
 # O(n**2)のオーダーで計算
-def maximum_profit_n2(input):
+def maximum_profit_n2(input: list) -> int:
     output = input[1] - input[0]
 
     for j in range(1, len(input)):
@@ -11,7 +11,7 @@ def maximum_profit_n2(input):
 
 
 # O(n)のオーダーで計算
-def maximum_profit_n(input):
+def maximum_profit_n(input: list) -> int:
     maxv = input[1] - input[0]
     minv = input[0]
 

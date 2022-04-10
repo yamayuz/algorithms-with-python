@@ -1,5 +1,5 @@
 # 改善前
-def calc_achieve(sales, milestones):
+def calc_achieve(sales:list, milestones: list) -> list:
     result = []
 
     for elm_mil in milestones:    
@@ -17,7 +17,7 @@ def calc_achieve(sales, milestones):
 
 
 # 改善後
-def calc_achieve_imp(sales, milestones):
+def calc_achieve_imp(sales:list, milestones: list) -> list:
     result = []
 
     for elm_mil in milestones:    
